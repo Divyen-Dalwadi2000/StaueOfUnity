@@ -26,7 +26,7 @@
     </li>
     <li>
         <b> React :</b>
-        <span> core Library for building UI ** ReactDOM ** > Package Responsible for rendering React components in the
+        <span> core Library for building UI <b> ReactDOM </b> Package Responsible for rendering React components in the
             DOM . </span>
     </li>
 </ol>
