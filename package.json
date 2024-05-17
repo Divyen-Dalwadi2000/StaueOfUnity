@@ -1,0 +1,19 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "<h1>Namaste React</h1>\r <h3> Assignment 1 </h3>\r <ol>\r     <li>\r         <b> Emmet : </b>\r         <span>Is a Toolkit for web developers that helps with writing HTML and CSS code quickly using\r             Aabbreviation</span>\r     </li>\r     <li>\r         <b> Library and Framework : :</b>\r         <b>Library :</b>\r         <span>is a collection of functions can be called by an application to perform specific tasks, while </span>\r         <b>Framework :</b> <span> provide a structure for building applications . </span>\r     </li>\r     <li>\r         <b> CDN :</b> <span> CDN stands for Content Delivery Network , it's a qNetwork of Distributed Servers that\r             Deliver Web Content To users based on their geographic location . </span>\r     </li>\r     <li>\r         <b> REACT :</b> <span>xit's Designed around the concept of reactive programming , where component react to\r             changes in data update their state accordingly.</span>\r     </li>\r     <li>\r         <b> crossorigin :</b> <span> Attribute in the Script TAG is used to Specify How the browser should handle\r             requests made by scripts from different origins .</span>\r     </li>\r     <li>\r         <b> React :</b>\r         <span> core Library for building UI <b> ReactDOM </b> Package Responsible for rendering React components in the\r             DOM . </span>\r     </li>\r </ol>",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
