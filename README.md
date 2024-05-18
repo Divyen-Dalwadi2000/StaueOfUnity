@@ -30,3 +30,15 @@
             DOM . </span>
     </li>
 </ol>
+
+<hr>
+<b> babel-plugin-transform-remove-console </b>
+<ol>
+    <li>npm install babel-plugin-transform-remove-console --save-dev</li>
+    <li>// with options
+        {
+        "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
+        }
+    </li>
+
+</ol>
