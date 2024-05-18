@@ -40,5 +40,32 @@
         "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
         }
     </li>
-
 </ol>
+<hr>
+<div>
+    <b> npm init </b> <span> use npm in our project </span>
+    <b> npm install -D parcel </b> <span> parcel install in dev-dependencies</span>
+    <b> npm i react </b> 
+    <b> npm i react-dom </b> 
+    <b> npx parcel build index.html </b> 
+    <b> npx parcel index.html </b> pracel will do The amazing things for us with this command 
+    <p><b>=> Tree shaking </b>  Removing Unwanted code </p>
+    <p><b>=> Transitive Dependencies </b> One Dependency on another </p>
+    <p><b>=> Created a server </b> </p>
+    <p><b>=> HMR - Hot Module Replacement </b> </p>
+    <p><b>=> File Watcher Algorithm - C++ </b> </p>
+    <p><b>=> Bundling </b> </p>
+    <p><b>=> Minify </b> </p>
+    <p><b>=> Cleaning Our Code </b> </p>
+    <p><b>=> Dev and Production Build </b> </p>
+    <p><b>=> super fast Build Algorithm </b> </p>
+    <p><b>=> Image Optimization </b>  (Heavy Thing on Web)</p> 
+    <p><b>=> Cashing While development </b> </p>
+    <p><b>=> Compression </b> rename our Variables </p>
+    <p><b>=> Compatable With older Version of Browser </b> </p>
+    <p><b>=> HHTPS on dev </b> </p>
+    <p><b>=> port Number </b> </p>
+    <p><b>=> Consistent Hashing Algorithm </b> </p>
+    <p><b>=> Zero Config </b> </p>
+    <p><b>=> </b> </p>
+</div>
