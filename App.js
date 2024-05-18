@@ -1,10 +1,17 @@
-import React from "react";
 import ReactDOM  from "react-dom/client";
+// React Element
+const h1 =  <h1> Dalwadi </h1>
+const h2 =  <h1> Divyen </h1>
 
-const h1 = React.createElement("h1", { id: "title1" }, "Dalwadi Divyen"); // react Element
-console.log(h1);  // // react Element is Nothing But the Object 
-const h2 = React.createElement("h2", { id: "title2" }, "Divyen Dalwadi")
-const container = React.createElement("div", { id: "container" }, [h1, h2]);
+// React Functional Component (Arrow Function)
+const App = () => {
+  return(
+    <div id="container">
+        {h1}
+        {h2}
+    </div>
+ );
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(container);
+root.render(<App/>);
