@@ -1,9 +1,37 @@
-body {
+body{
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 }
 
-#container {
+.container {
     color: rgb(56, 9, 99);
-    background-color: #c3f6f1;
+    background-color: white;
+}
+
+.marquee {
+    background-color: orange;
+}
+
+.header {
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.nav-bar>ul {
+    list-style-type: none;
+    display: flex;
+    padding: 2px;
+}
+
+.nav-bar>ul>li {
+    margin: 4px 2px;
+    margin-top: 20px;
+    padding: 2px;
 }
