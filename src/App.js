@@ -1,23 +1,50 @@
-import ReactDOM from "react-dom/client";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from "react-dom/client";
 import NavBar from "./components/nav/Navbar";
-import Marquee from "./components/home/Marquee.js";
-// import Card from "./components/ticket/Card";
 import Body from "./components/ticket/Body";
 import Footer from "./components/footer/Footer";
-// card 
+import Home from './components/home/Home';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import Contactus from './components/home/Contactus';
+import Pagenotfound from './components/error/Pagenotfound';
+import Login from './components/authentication/Login';
 
 // React Functional Component (Arrow Function)
 const App = () => {
   return (
     <div className="container-fluid">
-      <Marquee />
       <NavBar />
-      <Body />
+      <Outlet />
       <Footer />
     </div>
   );
 }
 
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Pagenotfound />,
+    children: [
+      {
+        path: "/lists",
+        element: <Body />
+      },
+      {
+        path: "/home",
+        element: <Home />
+      },
+      {
+        path: "/contactus",
+        element: <Contactus />
+      },
+      {
+        path: "/login",
+        element: <Login />
+      }
+    ]
+  },
+])
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<RouterProvider router={router} />);

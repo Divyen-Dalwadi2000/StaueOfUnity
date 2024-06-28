@@ -25,10 +25,10 @@ const Card = (
                             <h5 className="card-title">{title}</h5>
                             <p className="card-text">{description}</p>
 
-                            { <p className="card-text"><small className="text-muted">Attraction : {bundleVenues.map(e => e.event.dispayName)}</small></p> }
+                            {<p className="card-text"><small className="text-muted">Attraction : {bundleVenues.map(e => e.event.dispayName)}</small></p>}
                             {/* { <p className="card-text"><small className="text-muted">Attraction : {sou[0].bundleVenues[0].event.displayName}</small></p> } */}
-                            <p className="card-text"><small className="text-muted">Attraction : 
-                            {bundleVenues.map(bv => bv.event.dispayName )}
+                            <p className="card-text"><small className="text-muted">Attraction :
+                                {bundleVenues.map(bv => bv.event.dispayName)}
                             </small></p>
                             <button className="btn btn-success">Book</button>
                         </div>
