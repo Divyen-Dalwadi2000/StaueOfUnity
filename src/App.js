@@ -12,7 +12,7 @@ import Login from './components/authentication/Login';
 // React Functional Component (Arrow Function)
 const App = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       <NavBar />
       <Outlet />
       <Footer />

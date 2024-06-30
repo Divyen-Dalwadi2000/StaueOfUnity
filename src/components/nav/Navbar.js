@@ -6,6 +6,9 @@ import Marquee from "./Marquee";
 // require('dotenv').config() 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'; // Import the icon
+
 
 const NavBar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -47,7 +50,9 @@ const NavBar = () => {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#">Something else here</NavDropdown.Item> */}
                             {/* </NavDropdown> */}
-
+                        <Nav.Item>
+                        <FontAwesomeIcon icon={faPhoneVolume} />
+                        </Nav.Item>
                         </Nav>
                         {/* <Form className="d-flex" role="search">
                         <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" />

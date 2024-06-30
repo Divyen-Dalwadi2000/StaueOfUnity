@@ -21,7 +21,7 @@ const Body = () => {
 
     return (
         <>
-            <div className="flex justify-content-center ">
+            <div className="flex justify-content-center m-3">
                 <input type="text" className="input-group-sm me-3" value={searchList} onChange={(e) => setSearchList(e.target.value)} />
                 <Button variant="outline-success" onClick={() => filterData(searchList, allDataList)}>Search</Button>
             </div>
