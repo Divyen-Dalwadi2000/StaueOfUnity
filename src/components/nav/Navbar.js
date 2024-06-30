@@ -12,6 +12,12 @@ import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'; // Import the
 
 const NavBar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+    const linkstyle = {
+        textDecoration: "none",
+        color: "inherit"
+    }
+
     return (
         <>
             <Marquee />
@@ -25,39 +31,43 @@ const NavBar = () => {
                         <Nav className="me-auto my-2 my-lg-0 navbar-nav-scroll" style={{ maxHeight: '100px' }}>
                             <Nav.Item>
                                 <Nav.Link >
-                                    <Link to="/home">
+                                    <Link to="/home" style={linkstyle}>
                                         Home
                                     </Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link >
-                                    <Link to="/contactus">
+                                    <Link to="/contactus" style={linkstyle}>
                                         Contact Us
                                     </Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link>
-                                    <Link to="/lists">
+                                    <Link to="/lists" style={linkstyle}>
                                         Ticket
                                     </Link>
                                 </Nav.Link>
                             </Nav.Item>
-                            {/* <NavDropdown title="Ticket Book" id="navbarScrollDropdown"> */}
-                            {/* <NavDropdown.Item href="#">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#">Something else here</NavDropdown.Item> */}
-                            {/* </NavDropdown> */}
-                        <Nav.Item>
-                        <FontAwesomeIcon icon={faPhoneVolume} />
-                        </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link>
+                                    <Link to="/aboutstatue" style={linkstyle}>
+                                        About SoU
+                                    </Link >
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link>
+                                    <Link to="/attractions" style={linkstyle}>
+                                    Tourist Attractions
+                                    </Link >
+                                </Nav.Link>
+                            </Nav.Item>
                         </Nav>
-                        {/* <Form className="d-flex" role="search">
-                        <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" />
-                        <Button variant="outline-success" type="submit">Search</Button>
-                    </Form> */}
+
+                        <FontAwesomeIcon icon={faPhoneVolume} className="me-3" />
+
                         {(!isLoggedIn)
                             ?
                             <Link to="/login">

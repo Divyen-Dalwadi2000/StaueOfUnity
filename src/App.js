@@ -8,6 +8,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Contactus from './components/home/Contactus';
 import Pagenotfound from './components/error/Pagenotfound';
 import Login from './components/authentication/Login';
+import Aboutsou from './components/nav/Aboutsou';
+import Attractions from './components/nav/Attractions';
 
 // React Functional Component (Arrow Function)
 const App = () => {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/lists",
         element: <Body />
+      },
+      {
+        path: "/aboutstatue",
+        element: <Aboutsou />
+      },
+      {
+        path: "/attractions",
+        element: <Attractions />
       },
       {
         path: "/home",
