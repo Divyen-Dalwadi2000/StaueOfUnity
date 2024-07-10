@@ -1,28 +1,57 @@
+import C1 from "./assets/images/crousal1.jpg"
+
+
+
 export const ImageUrl = "https://www.soutickets.in//file/";
+
+export const CROUSAL_URL = [
+    {
+        "id": 1,
+        "name" : "one",
+        "url": C1,
+        "label" :"Our Journey",
+        "paragraph" :"Amazing Place in India"
+    },
+    {
+        "id": 2,
+        "name" : "two",
+        "url": "https://images.unsplash.com/photo-1570106230673-3bab9f2f3c63?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "label" :"DAM",
+        "paragraph" :"Night Show Is Beutiful"
+    },
+    {
+        "id": 3,
+        "name" : "three",
+        "url": "https://images.unsplash.com/photo-1679756081777-4553c174490e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "label" :"MII",
+        "paragraph" :"Make In India"
+    }
+]
+
 export const FooterImageUrl = [
     {
-        "id" : 1 ,
-        "url" : "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+        "id": 111,
+        "url": "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        "id" : 2 ,
-        "url" : "https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D"
+        "id": 222,
+        "url": "https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        "id" : 3 ,
-        "url" : "https://images.unsplash.com/photo-1580085851294-c5d44ff1b707?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D"
+        "id": 3333,
+        "url": "https://images.unsplash.com/photo-1580085851294-c5d44ff1b707?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D"
     },
     {
-        "id" : 4 ,
-        "url" : "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"
+        "id": 444,
+        "url": "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        "id" : 5,
-        "url" : "https://images.unsplash.com/photo-1524467128837-00f6644866d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D"
+        "id": 555,
+        "url": "https://images.unsplash.com/photo-1524467128837-00f6644866d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D"
     },
     {
-        "id" : 6 ,
-        "url" : "https://images.unsplash.com/photo-1640328441917-59ef96674a97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjUxfHx8ZW58MHx8fHx8"
+        "id": 666,
+        "url": "https://images.unsplash.com/photo-1640328441917-59ef96674a97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjUxfHx8ZW58MHx8fHx8"
     }
 ]
 
@@ -14550,7 +14579,7 @@ export const sou = [
             }
         ],
         "bundleImages": [
-          
+
             {
                 "id": 242,
                 "fileBlobId": "b0bb48ad858be197946bab2e9e1f4cb2151448567bf7ad636ad9862991a6ddb7",
@@ -15421,7 +15450,7 @@ export const sou = [
             }
         ],
         "bundleImages": [
-          
+
             {
                 "id": 174,
                 "fileBlobId": "0758e2acf3d9fd8510dd713494205b383279357ac4ee940b205ed40210d6bd94",
@@ -16472,7 +16501,7 @@ export const sou = [
             }
         ],
         "bundleImages": [
-        
+
             {
                 "id": 260,
                 "fileBlobId": "1a0e9c45be9d402a0a588d171f5068c78d8da90b473f8c8dcfa4775d2280a148",
@@ -16775,7 +16804,7 @@ export const sou = [
             }
         ],
         "bundleImages": [
-           
+
             {
                 "id": 268,
                 "fileBlobId": "1a6c3511a1866ab5d19260fac55e95340a2f146b1084c0ff492b67634021d698",
@@ -17210,7 +17239,7 @@ export const sou = [
             }
         ],
         "bundleImages": [
-           
+
             {
                 "id": 347,
                 "fileBlobId": "9dc74949d9ddcfbf328a1f89231787703cfa6c497b68b26a8c50bd2e1944486e",

@@ -22,10 +22,10 @@ const NavBar = () => {
         <>
             <Marquee />
 
-            <Navbar expand="lg">
+            <Navbar expand="lg" className="bg-transparent" variant="light">
                 <Container>
-                    <Navbar.Brand href="#"> <img className="logo" src={Logo} alt="logo" /></Navbar.Brand>
-                    <Navbar.Brand href="#"> <img className="logo" src={Logo2} alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href="#"> <img className="logo h-25"  src={Logo} alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href="#"> <img className="logo h-25" src={Logo2} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="me-auto my-2 my-lg-0 navbar-nav-scroll" style={{ maxHeight: '100px' }}>
@@ -60,12 +60,11 @@ const NavBar = () => {
                             <Nav.Item>
                                 <Nav.Link>
                                     <Link to="/attractions" style={linkstyle}>
-                                    Tourist Attractions
+                                        Tourist Attractions
                                     </Link >
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
-
                         <FontAwesomeIcon icon={faPhoneVolume} className="me-3" />
 
                         {(!isLoggedIn)

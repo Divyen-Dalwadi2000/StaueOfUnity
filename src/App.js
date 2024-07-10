@@ -1,15 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from "react-dom/client";
-import NavBar from "./components/nav/Navbar";
+import NavBar from "./components/header/Navbar";
 import Body from "./components/ticket/Body";
 import Footer from "./components/footer/Footer";
-import Home from './components/home/Home';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Contactus from './components/home/Contactus';
-import Pagenotfound from './components/error/Pagenotfound';
+import Home from './components/header/Home';
+import Contactus from './components/header/Contactus';
+import List from "./components/ticket/List";
+import Aboutsou from './components/header/Aboutsou';
+import Attractions from "./components/header/Attractions"
 import Login from './components/authentication/Login';
-import Aboutsou from './components/nav/Aboutsou';
-import Attractions from './components/nav/Attractions';
+import Pagenotfound from './components/error/Pagenotfound';
+
 
 // React Functional Component (Arrow Function)
 const App = () => {
@@ -21,7 +23,6 @@ const App = () => {
     </div>
   );
 }
-
 
 const router = createBrowserRouter([
   {
@@ -52,9 +53,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />
+      },
+      {
+        path: "/list/:id",
+        element: <List />
       }
     ]
-  },
-])
+  }
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);

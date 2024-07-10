@@ -1,0 +1,15 @@
+.hoverable {
+    transition: transform 0.3s ease;
+}
+
+.hoverable:hover {
+    transform: scale(1.3);
+}
+
+.hoverable-btn {
+    transition: transform 0.3s ease;
+}
+
+.hoverable-btn:hover {
+    transform: scale(1.1);
+}

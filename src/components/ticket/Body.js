@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { sou } from "../../../config";
+import { sou } from "../../config";
 import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 

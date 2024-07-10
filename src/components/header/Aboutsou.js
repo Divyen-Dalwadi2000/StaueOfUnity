@@ -1,11 +1,15 @@
 import Statue from "../../assets/images/statue.jpg";
-
+import { motion } from "framer-motion";
 const Aboutsou = () => {
     return (
 
         <div className="container-fluid mt-5">
             <div className="row">
-                <div className="col-md-6 text-muted ">
+                <motion.div
+                initial={{x:-100 , opacity:0}}
+                animate={{x:0 , opacity:1}}
+                transition={{duration:1}}
+                 className="col-md-6 text-muted ">
                     <h4 className="text-center">About Statue Of Unity</h4>
                     <p className="">
                         The statue has been built as a verse to Sardar Vallabhbhai Patel, the Iron Man of India and the first home minister of independent India. He was responsible for uniting all 562 princely states of the country to build the Republic of India. <strong>
@@ -22,10 +26,14 @@ const Aboutsou = () => {
                     <p>Altogether, the statue is divided into five zones. Up to its shin is the first zone, comprising three levels, including an exhibit floor, mezzanine and roof. It will contain a Memorial Garden and a large museum.</p>
                     <p>Zone 2 extends up to the statue’s thighs at 149 meters, while Zone 3 goes up to the viewing gallery at 153 meters.</p>
                     <p>Zone 4 and Zone 5 would be out of reach of visitors, with Zone 4 comprising the maintenance area and Zone 5 the head and shoulders.</p>
-                </div>
-                <div className="col-md-6 how-img d-flex align-items-center justify-content-center">
+                </motion.div>
+                <motion.div
+                 initial={{x:100 , opacity:0}}
+                 animate={{x:0 , opacity:1}}
+                 transition={{duration:1}}
+                className="col-md-6 how-img d-flex align-items-center justify-content-center">
                     <img src={Statue} className="img-fluid" alt="staue image" />
-                </div>
+                </motion.div>
             </div>
         </div>
     )
